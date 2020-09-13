@@ -1,3 +1,7 @@
+big.txt
+*.ipynb
+*pycache*
+
 # History files
 .Rhistory
 .Rapp.history
