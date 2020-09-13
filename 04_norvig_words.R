@@ -43,11 +43,12 @@ Pword["the"]
 
 wd$splits("word")
 
-wd$segment("choosespain", Pword)
-wd$segment("speedofart", Pword)
+wd$segment("choosespain", tuple(WORDS))
+wd$segment("speedofart", tuple(WORDS))
+wd$segment("smallandinsignificant", tuple(WORDS))
 
 decl = paste0("wheninthecourseofhumaneventsitbecomesnecessaryforonepeoplet",
               "odissolvethepoliticalbandswhichhaveconnectedthemwithanothe",
               "andtoassumeamongthepowersoftheearththeseparateandequalstati",
               "ontowhichthelawsofnatureandofnaturesgodentitlethem", sep = "")
-wd$sentence(wd$segment(decl, Pword))
+wd$sentence(wd$segment(decl, tuple(WORDS)))
